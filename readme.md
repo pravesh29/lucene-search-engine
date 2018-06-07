@@ -1,4 +1,4 @@
-This directory contains code for basic search engine built on top of Lucene. Complete code is https://bitbucket.org/mahakg/lucene-search-engine/ 
+This directory contains code for basic search engine built on top of Lucene.
 
 # Objective
 Make data searchable. You can find document against some queries you're interested in. The result will be the excerpt of those queries in the documents. 
