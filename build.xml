@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project LuceneSearch-ASR">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/Search.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="LuceneBasicSearch"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/queryparser/lucene-queryparser-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/analysis/common/lucene-analyzers-common-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/core/lucene-core-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/demo/lucene-demo-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/highlighter/lucene-highlighter-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/memory/lucene-memory-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/queries/lucene-queries-6.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/techkriti/Downloads/lucene-6.0.1/join/lucene-join-6.0.1.jar"/>
+        </jar>
+    </target>
+</project>
